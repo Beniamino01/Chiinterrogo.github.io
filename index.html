@@ -1,0 +1,40 @@
+<html>
+<body>
+<script type="text/javascript">
+var nomi=["Abouhamra","Bueno","Foà","Hallac","Hassan","Kohanim","Katri","Liuim","Loloey","Rimini","Sassoon","Sazbon","Somekh","Turiel","Zelnick"];
+function interroga(){
+var a=Math.floor(Math.random()*15);
+document.getElementById("interrogato").innerHTML=nomi[a];
+document.getElementById("interrogato2").innerHTML="";
+document.getElementById("interrogato3").innerHTML="";
+}
+function interroga2(a,b){
+var a=Math.floor(Math.random()*15);
+var b=Math.floor(Math.random()*15);
+document.getElementById("interrogato").innerHTML=nomi[a];
+document.getElementById("interrogato2").innerHTML=nomi[b];
+document.getElementById("interrogato3").innerHTML="";
+}
+function interroga3(){
+var a=Math.floor(Math.random()*15);
+var b=Math.floor(Math.random()*15);
+var c=Math.floor(Math.random()*15);
+document.getElementById("interrogato").innerHTML=nomi[a];
+document.getElementById("interrogato2").innerHTML=nomi[b];
+document.getElementById("interrogato3").innerHTML=nomi[c];
+}
+</script>
+<h1>Chi vuol esser interrogato?</h1>
+<text>1 interrogato</text>
+  <input  type="button"  onclick="interroga()"/>
+  <br>
+<text>2 interrogati</text>
+  <input type="button"  onclick="interroga2()"/>
+<br>
+<text>3 interrogati</text>
+  <input type="button"  onclick="interroga3()"/>
+<h1><text1 id="interrogato" /></h1>
+<h1><text2 id="interrogato2"/></h1>
+<h1><text3 id="interrogato3"/></h1>
+</body>
+</html>
